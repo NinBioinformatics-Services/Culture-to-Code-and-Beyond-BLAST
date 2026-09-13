@@ -18,7 +18,7 @@ While basic database navigation and simple alignment tools get you started, mode
 
 ---
 ![Static Badge](https://img.shields.io/badge/Click--below--for--Brochure-blue)
-![Click here for Brochure](https://github.com/ninbioinformatics-jpg/Culture-to-Code-and-Beyond-BLAST/blob/e68c87cb804af0cb2d3c491fd9a1e57a2921998b/CCBB%20Flyer%20New.png)
+![Click here for Brochure]()
 ## 🎯 Target Audience
 
 - UG and PG Students of Microbiology, Biotechnology, Chemical/Life/Allied/Medical Sciences
