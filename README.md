@@ -18,6 +18,8 @@ While basic database navigation and simple alignment tools get you started, mode
 
 ---
 
+[Click Here for Brochure](CCBB Flyer New.png)
+
 ## 🎯 Target Audience
 
 - UG and PG Students of Microbiology, Biotechnology, Chemical/Life/Allied/Medical Sciences
