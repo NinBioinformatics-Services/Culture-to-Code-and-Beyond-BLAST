@@ -10,7 +10,6 @@
 
 ---
 
-
 ## 📌 Course Overview
 
 **Culture to Code and Beyond 'BLAST'** is a university-aligned, 60 Hours MOOC designed to transition life science students from traditional wet-lab research into dry-lab computational workflows.
@@ -73,5 +72,6 @@ Click the link : [https://forms.gle/QPwobaEQ1A4KzDic9](https://forms.gle/QPwobaE
 * Course is Totally in Recorded Mode and Self Paced
 * Laptop/Desktop is 'Not Mandatory', but Optional for practicing Demonstration
 * Once paid Registration Amount will not be Returned/Refund/Adjusted under any Circumstances
+
 
 **Loading....**
