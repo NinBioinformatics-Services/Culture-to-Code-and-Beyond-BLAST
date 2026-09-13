@@ -17,10 +17,8 @@
 While basic database navigation and simple alignment tools get you started, modern microbiology and biotechnology demand expertise in high-throughput sequencing, 3D structural modeling, and systems-level interaction networks. This course bridges that critical gap.
 
 ---
-![Static Badge](https://img.shields.io/badge/Click--below--for--Brochure-plastic-blue)
-
-([CCBB Flyer New.png](https://github.com/ninbioinformatics-jpg/Culture-to-Code-and-Beyond-BLAST/blob/e68c87cb804af0cb2d3c491fd9a1e57a2921998b/CCBB%20Flyer%20New.png))
-
+![Static Badge](https://img.shields.io/badge/Click--below--for--Brochure-blue)
+![Click here for Brochure](https://github.com/ninbioinformatics-jpg/Culture-to-Code-and-Beyond-BLAST/blob/e68c87cb804af0cb2d3c491fd9a1e57a2921998b/CCBB%20Flyer%20New.png)
 ## 🎯 Target Audience
 
 - UG and PG Students of Microbiology, Biotechnology, Chemical/Life/Allied/Medical Sciences
