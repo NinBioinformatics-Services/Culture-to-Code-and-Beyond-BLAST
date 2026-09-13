@@ -3,6 +3,14 @@
 
 ---
 
+![Static Badge](https://img.shields.io/badge/Culture--to--Code--and--Beyond--'BLAST'-rgb)
+
+---
+![Static Badge](https://img.shields.io/badge/DO--NOT--CHANGE--ANYTHING--IN--THIS--REPO!-red)
+
+---
+
+
 ## 📌 Course Overview
 
 **Culture to Code and Beyond 'BLAST'** is a university-aligned, 60 Hours MOOC designed to transition life science students from traditional wet-lab research into dry-lab computational workflows.
@@ -47,11 +55,23 @@ While basic database navigation and simple alignment tools get you started, mode
 * **Practical Focus:** Simulating drug-target and antibiotic interactions.
 
 ---
+### Announcement
+
+> All the Submodules are 'Not Limited To..'!; Participants can Suggest any Topic Aligning with their Syllabus, If it is Feasible, That will be Considered in Course!*
+>
+> *Subject to the Feasibility!
+
+---
+
 ## Registration
 
 
 Click the link : [https://forms.gle/QPwobaEQ1A4KzDic9](https://forms.gle/QPwobaEQ1A4KzDic9) For Registration!
 
 ---
+* Read the Initial part of ReadME file Carefully, before Registration!
+* Course is Totally in Recorded Mode and Self Paced
+* Laptop/Desktop is 'Not Mandatory', but Optional for practicing Demonstration
+* Once paid Registration Amount will not be Returned/Refund/Adjusted under any Circumstances
 
 **Loading....**
