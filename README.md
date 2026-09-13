@@ -80,4 +80,10 @@ Click the link : [https://forms.gle/QPwobaEQ1A4KzDic9](https://forms.gle/QPwobaE
 
 If You feel any Difficulty while registration/Have any Query, Just mail/WhatsApp us on contact given in Brochure!
 
+![Static Badge](https://img.shields.io/badge/ninbioinformatics%40gmail.com-Gmail-%23EA4335?labelColor=black)
+
+![Static Badge](https://img.shields.io/badge/NinBioinformatics--Services?style=for-the-badge&logo=youtube&logoColor=red&logoSize=auto&labelColor=black&color=red)
+
+
+
 **Wish to See You in a MOOC!**
