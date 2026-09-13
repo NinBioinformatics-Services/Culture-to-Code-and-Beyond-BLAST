@@ -74,5 +74,10 @@ Click the link : [https://forms.gle/QPwobaEQ1A4KzDic9](https://forms.gle/QPwobaE
 * Laptop/Desktop is 'Not Mandatory', but Optional for practicing Demonstration
 * Once paid Registration Amount will not be Returned/Refund/Adjusted under any Circumstances
 
+>> After Registration and Payment of Registration Fees, Organizers will Verify your Details and will Add you to the WhatsApp Group!
 
-**Loading....**
+## For Any Assistance
+
+If You feel any Difficulty while registration/Have any Query, Just mail/WhatsApp us on contact given in Brochure!
+
+**Wish to See You in a MOOC!**
