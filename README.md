@@ -66,7 +66,7 @@ While basic database navigation and simple alignment tools get you started, mode
 ## Registration
 
 
-Click the link : [https://forms.gle/QPwobaEQ1A4KzDic9](https://forms.gle/QPwobaEQ1A4KzDic9) For Registration!
+**Click the link : [https://forms.gle/QPwobaEQ1A4KzDic9](https://forms.gle/QPwobaEQ1A4KzDic9) For Registration!**
 
 ---
 * Read the Initial part of ReadME file Carefully, before Registration!
