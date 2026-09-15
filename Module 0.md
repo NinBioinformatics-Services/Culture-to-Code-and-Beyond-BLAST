@@ -303,6 +303,10 @@ Lower $E$-values (approaching 0) signal statistically significant homologous mat
 * **PSI-BLAST**: Position-Specific Iterative BLAST generating Position-Specific Scoring Matrices (PSSMs) to detect distant protein homologs.
 
 ---
+Here is a Curated List of already published YouTube videos by Our Mentor and Resource Person explaining the same Topic!
+Loading...........
+---
+
 
 ## 📚 References
 
