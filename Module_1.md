@@ -21,6 +21,8 @@ Multiple Sequence (MSA):   Seq A: ATGCGATAC
                                   *** * *** (Conserved Positions)
 ```
 
+[![Tutorial](https://img.shields.io/badge/Video_link-will_be_out_soon!-%238A2BE2)](#)
+
 ### 🧠 Pairwise Foundation: Global vs. Local Alignment Algorithms
 Understanding MSA algorithms requires starting with pairwise alignment dynamic programming foundations:
 
@@ -60,6 +62,8 @@ MUSCLE improves alignment accuracy by incorporating iterative refinement steps. 
 The DECIPHER R package implements local sequence context profiling (`AlignSeqs`) to create multiple sequence alignments for high-throughput 16S rRNA gene profiling. DECIPHER uses shared 5-mer distance matrices and iterative reclustering, providing optimized computational efficiency for amplicon analysis pipelines.
 
 ---
+
+[![Tutorial](https://img.shields.io/badge/Video_link-will_be_out_soon!-%238A2BE2)](#)
 
 ## 🧬 2. Marker Gene Analysis & Microbial Taxonomy
 
@@ -119,6 +123,8 @@ DADA2 utilizes Naive Bayesian Classifiers (`assignTaxonomy`) to match RSVs again
 * **Greengenes**: Dedicated 16S rRNA reference database for microbial taxonomy.
 
 ---
+
+[![Tutorial](https://img.shields.io/badge/Video_link-will_be_out_soon!-%238A2BE2)](#)
 
 ## 🌳 3. Molecular Phylogenetics & Tree-Building Methods
 
