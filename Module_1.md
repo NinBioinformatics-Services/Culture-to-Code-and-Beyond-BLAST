@@ -8,7 +8,7 @@
 
 ## 📌 1. Multiple Sequence Alignment (MSA) & Progressive Alignment Algorithms
 
-Sequence alignment represents the ultimate core foundation of computational biology [186, 374]. Aligning biological sequences reveals evolutionary conservation, structural motifs, and functional homology across diverse bacterial and fungal species [186, 199]. While pairwise alignment compares two sequences, **Multiple Sequence Alignment (MSA)** aligns three or more biological sequences simultaneously to identify conserved residue positions and evolutionary insertion-deletion (indel) events [165, 186, 377, 414].
+Sequence alignment represents the ultimate core foundation of computational biology. Aligning biological sequences reveals evolutionary conservation, structural motifs, and functional homology across diverse bacterial and fungal species. While pairwise alignment compares two sequences, **Multiple Sequence Alignment (MSA)** aligns three or more biological sequences simultaneously to identify conserved residue positions and evolutionary insertion-deletion (indel) events.
 
 ```
 Pairwise Alignment:        Seq A: ATGCGATAC
@@ -24,22 +24,22 @@ Multiple Sequence (MSA):   Seq A: ATGCGATAC
 ### 🧠 Pairwise Foundation: Global vs. Local Alignment Algorithms
 Understanding MSA algorithms requires starting with pairwise alignment dynamic programming foundations:
 
-1. **Needleman-Wunsch Algorithm (Global Alignment)**: Formulated by Needleman and Wunsch (1970), this algorithm optimizes alignment across the entire length of two protein or nucleotide sequences [165]. Dynamic programming matrices calculate match scores, mismatch penalties, and gap penalties, making it ideal for sequences of similar length [165].
-2. **Smith-Waterman Algorithm (Local Alignment)**: Developed by Smith and Waterman (1981), this approach identifies high-scoring local subsequences within longer, divergent sequences [377, 383]. Matrix values lower than zero reset to zero, isolating conserved catalytic sites or active domains without forcing full-length alignment [377, 383].
-3. **Maximal Segment Pair (MSP) & Heuristic Alignment**: Altschul et al. (1990) introduced the Basic Local Alignment Search Tool (BLAST), which calculates Maximal Segment Pair (MSP) scores for rapid sequence database searching [184, 186]. BLAST uses heuristic word-matching seeds to accelerate local similarity identification by orders of magnitude compared to exact dynamic programming [186].
+1. **Needleman-Wunsch Algorithm (Global Alignment)**: Formulated by Needleman and Wunsch (1970), this algorithm optimizes alignment across the entire length of two protein or nucleotide sequences. Dynamic programming matrices calculate match scores, mismatch penalties, and gap penalties, making it ideal for sequences of similar length.
+2. **Smith-Waterman Algorithm (Local Alignment)**: Developed by Smith and Waterman (1981), this approach identifies high-scoring local subsequences within longer, divergent sequences. Matrix values lower than zero reset to zero, isolating conserved catalytic sites or active domains without forcing full-length alignment.
+3. **Maximal Segment Pair (MSP) & Heuristic Alignment**: Altschul et al. (1990) introduced the Basic Local Alignment Search Tool (BLAST), which calculates Maximal Segment Pair (MSP) scores for rapid sequence database searching. BLAST uses heuristic word-matching seeds to accelerate local similarity identification by orders of magnitude compared to exact dynamic programming.
 
 | Feature | Global Alignment (Needleman-Wunsch) | Local Alignment (Smith-Waterman) | Local Heuristic (BLAST) |
 | :--- | :--- | :--- | :--- |
-| **Primary Focus** | Entire sequence length [165] | Highly conserved local regions [377] | Rapid database query matching [186] |
-| **Algorithm Type** | Dynamic Programming [165] | Dynamic Programming [377] | Heuristic Seed Extension [186] |
-| **Best Use Case** | End-to-end homolog comparison [165] | Domain or motif identification [377] | High-throughput search [186] |
+| **Primary Focus** | Entire sequence length | Highly conserved local regions | Rapid database query matching |
+| **Algorithm Type** | Dynamic Programming | Dynamic Programming | Heuristic Seed Extension |
+| **Best Use Case** | End-to-end homolog comparison | Domain or motif identification | High-throughput search |
 
 ### 🚀 Progressive Alignment Approach
-Computing exact optimal N-dimensional dynamic programming alignments for $N$ sequences is NP-complete, requiring massive computational complexity. Modern MSA tools utilize **progressive alignment algorithms** [196, 221]:
+Computing exact optimal N-dimensional dynamic programming alignments for $N$ sequences is NP-complete, requiring massive computational complexity. Modern MSA tools utilize **progressive alignment algorithms** :
 
-1. **Calculate Pairwise Distance Matrix**: Calculate all pairwise alignment scores between sequence pairs using global alignment [165].
-2. **Construct Guide Tree**: Build a hierarchical guide tree (e.g., via Neighbor-Joining) based on pairwise dissimilarity matrices [199, 223].
-3. **Progressive Profile Alignment**: Align the most closely related sequences first, building sequence profiles. Gradually add more distant sequences or profiles following guide tree topology until all sequences align [221, 222].
+1. **Calculate Pairwise Distance Matrix**: Calculate all pairwise alignment scores between sequence pairs using global alignment.
+2. **Construct Guide Tree**: Build a hierarchical guide tree (e.g., via Neighbor-Joining) based on pairwise dissimilarity matrices.
+3. **Progressive Profile Alignment**: Align the most closely related sequences first, building sequence profiles. Gradually add more distant sequences or profiles following guide tree topology until all sequences align.
 
 ```
 Step 1: Pairwise Distances  -->  Step 2: Guide Tree  -->  Step 3: Progressive Alignment
@@ -57,13 +57,13 @@ CLUSTAL Omega utilizes seeded guide trees and profile Hidden Markov Models (HMMs
 MUSCLE improves alignment accuracy by incorporating iterative refinement steps. After initial progressive alignment, MUSCLE calculates distance measures, rebuilds guide trees, and re-aligns profile sub-trees to correct early alignment errors.
 
 #### 3. DECIPHER (`AlignSeqs` in R)
-The DECIPHER R package implements local sequence context profiling (`AlignSeqs`) to create multiple sequence alignments for high-throughput 16S rRNA gene profiling [196, 221, 222]. DECIPHER uses shared 5-mer distance matrices and iterative reclustering, providing optimized computational efficiency for amplicon analysis pipelines [196, 222].
+The DECIPHER R package implements local sequence context profiling (`AlignSeqs`) to create multiple sequence alignments for high-throughput 16S rRNA gene profiling. DECIPHER uses shared 5-mer distance matrices and iterative reclustering, providing optimized computational efficiency for amplicon analysis pipelines.
 
 ---
 
 ## 🧬 2. Marker Gene Analysis & Microbial Taxonomy
 
-Microbial taxonomy relies on marker gene profiling to classify bacteria, archaea, and fungi without needing unculturable organism isolation [197, 198, 209].
+Microbial taxonomy relies on marker gene profiling to classify bacteria, archaea, and fungi without needing unculturable organism isolation.
 
 ```
                      Microbial Marker Genes
@@ -77,11 +77,11 @@ Microbial taxonomy relies on marker gene profiling to classify bacteria, archaea
 ```
 
 ### 🧫 16S rRNA Gene Profiling for Bacterial Taxonomy
-The **16S ribosomal RNA (16S rRNA) gene** represents the ultimate gold standard marker for bacterial identification and phylogenetics [197, 198]. 
+The **16S ribosomal RNA (16S rRNA) gene** represents the ultimate gold standard marker for bacterial identification and phylogenetics. 
 
-* **Structural Architecture**: The 16S rRNA molecule forms a structural component of the small ribosomal subunit, catalyzing protein translation and mRNA alignment [46, 50, 52].
-* **Conserved vs. Hypervariable Regions**: The gene contains highly conserved regions interspersed with nine **hypervariable regions (V1-V9)** [204]. Conserved regions allow universal PCR primer annealing, while hypervariable regions contain species-specific sequence signatures [194, 204].
-* **V4 Region Focus**: Illumina MiSeq paired-end sequencing frequently targets the **V4 region** (e.g., 2x250 bp amplicon reads) due to optimal overlap, high taxonomic resolution, and robust community coverage [204, 207].
+* **Structural Architecture**: The 16S rRNA molecule forms a structural component of the small ribosomal subunit, catalyzing protein translation and mRNA alignment.
+* **Conserved vs. Hypervariable Regions**: The gene contains highly conserved regions interspersed with nine **hypervariable regions (V1-V9)**. Conserved regions allow universal PCR primer annealing, while hypervariable regions contain species-specific sequence signatures.
+* **V4 Region Focus**: Illumina MiSeq paired-end sequencing frequently targets the **V4 region** (e.g., 2x250 bp amplicon reads) due to optimal overlap, high taxonomic resolution, and robust community coverage.
 
 ```
 16S rRNA Gene:
@@ -98,13 +98,13 @@ For eukaryotic microorganisms such as fungi, 16S rRNA gene resolution is insuffi
 
 ### 🔬 High-Resolution Denoising: RSVs/ASVs vs. Traditional 97% OTUs
 
-Historically, amplicon bioinformatics clustered sequencing reads into **Operational Taxonomic Units (OTUs)** based on an arbitrary 97% sequence similarity threshold [197, 198]. However, traditional OTU clustering ignores sequence quality scores, masks fine-scale biological variation, and generates spurious taxa [197, 198, 228].
+Historically, amplicon bioinformatics clustered sequencing reads into **Operational Taxonomic Units (OTUs)** based on an arbitrary 97% sequence similarity threshold. However, traditional OTU clustering ignores sequence quality scores, masks fine-scale biological variation, and generates spurious taxa.
 
-Modern workflows utilize high-resolution algorithms like **DADA2** to infer exact **Ribosomal Sequence Variants (RSVs)** or **Amplicon Sequence Variants (ASVs)** [198, 199, 209]:
+Modern workflows utilize high-resolution algorithms like **DADA2** to infer exact **Ribosomal Sequence Variants (RSVs)** or **Amplicon Sequence Variants (ASVs)** :
 
-1. **Probabilistic Noise Modeling**: DADA2 incorporates per-base quality scores and sequence frequencies into a parameterized error model for nucleotide transitions [198, 211, 213].
-2. **Single-Nucleotide Resolution**: DADA2 distinguishes real biological variation differing by a single nucleotide from sequencing error [209].
-3. **Dereplication & Chimera Removal**: Sequences are dereplicated, denoised, merged as paired-end reads, and screened to remove chimeric sequences formed during PCR amplification (`removeBimeraDenovo`) [209, 217, 218, 219].
+1. **Probabilistic Noise Modeling**: DADA2 incorporates per-base quality scores and sequence frequencies into a parameterized error model for nucleotide transitions.
+2. **Single-Nucleotide Resolution**: DADA2 distinguishes real biological variation differing by a single nucleotide from sequencing error.
+3. **Dereplication & Chimera Removal**: Sequences are dereplicated, denoised, merged as paired-end reads, and screened to remove chimeric sequences formed during PCR amplification (`removeBimeraDenovo`).
 
 ```
 Raw Reads (FASTQ) --> Quality Trimming --> DADA2 Error Model --> RSV Table --> Chimera Removal
@@ -113,16 +113,16 @@ Taxonomic Assignment (RDP / SILVA) <-- DECIPHER Alignment <-- Phylogenetic Tree 
 ```
 
 ### 🏷️ Taxonomic Classification Databases
-DADA2 utilizes Naive Bayesian Classifiers (`assignTaxonomy`) to match RSVs against reference database training sets [219, 220]:
-* **RDP (Ribosomal Database Project)**: Curated 16S rRNA bacterial reference training sets [219, 220].
-* **SILVA**: Comprehensive, quality-checked database for bacterial, archaeal, and eukaryotic ribosomal RNA [221].
-* **Greengenes**: Dedicated 16S rRNA reference database for microbial taxonomy [221].
+DADA2 utilizes Naive Bayesian Classifiers (`assignTaxonomy`) to match RSVs against reference database training sets.
+* **RDP (Ribosomal Database Project)**: Curated 16S rRNA bacterial reference training sets.
+* **SILVA**: Comprehensive, quality-checked database for bacterial, archaeal, and eukaryotic ribosomal RNA.
+* **Greengenes**: Dedicated 16S rRNA reference database for microbial taxonomy.
 
 ---
 
 ## 🌳 3. Molecular Phylogenetics & Tree-Building Methods
 
-Molecular phylogenetics reconstructs the evolutionary history and genealogical relationships among microbial species based on molecular sequence alignments [199, 221, 387, 388].
+Molecular phylogenetics reconstructs the evolutionary history and genealogical relationships among microbial species based on molecular sequence alignments.
 
 ```
                      Phylogenetic Tree Reconstruction
@@ -136,26 +136,26 @@ Molecular phylogenetics reconstructs the evolutionary history and genealogical r
 ```
 
 ### 📊 Tree Architecture and Terminology
-* **Nodes**: Represent taxonomic units. **External nodes (tips)** represent observed species/RSVs, while **internal nodes** represent ancestral divergence events [227, 388].
-* **Branches**: Connect nodes; branch lengths reflect evolutionary distance (substitutions per site) [227].
+* **Nodes**: Represent taxonomic units. **External nodes (tips)** represent observed species/RSVs, while **internal nodes** represent ancestral divergence events.
+* **Branches**: Connect nodes; branch lengths reflect evolutionary distance (substitutions per site).
 * **Clades**: Monophyletic groups comprising a common ancestor and all descended lineage tips.
 
 ### 📐 Distance-Based Method: Neighbor-Joining (NJ)
-Distance-based methods convert multiple sequence alignments into pairwise dissimilarity matrices [199, 223]:
+Distance-based methods convert multiple sequence alignments into pairwise dissimilarity matrices:
 
-* **Distance Matrix Calculation**: Pairwise distances evaluate sequence dissimilarity (e.g., Jaccard distance, Bray-Curtis dissimilarity, or Unifrac distances) [256, 261, 297].
-* **Algorithm Mechanics**: The Neighbor-Joining (NJ) algorithm iteratively joins the pair of nodes that minimizes total tree branch length while adjusting for individual lineage evolution rates [223].
-* **Performance**: NJ is computationally fast, serving as an outstanding initial tree topology generator for large microbial census datasets [223].
+* **Distance Matrix Calculation**: Pairwise distances evaluate sequence dissimilarity (e.g., Jaccard distance, Bray-Curtis dissimilarity, or Unifrac distances).
+* **Algorithm Mechanics**: The Neighbor-Joining (NJ) algorithm iteratively joins the pair of nodes that minimizes total tree branch length while adjusting for individual lineage evolution rates.
+* **Performance**: NJ is computationally fast, serving as an outstanding initial tree topology generator for large microbial census datasets.
 
 ### 🎲 Character-Based Method: Maximum Likelihood (ML)
-Character-based probabilistic methods examine individual alignment positions to evaluate evolutionary hypotheses [199, 223]:
+Character-based probabilistic methods examine individual alignment positions to evaluate evolutionary hypotheses:
 
-* **Likelihood Optimization**: Maximum Likelihood (ML) searches for the specific phylogenetic tree topology and branch lengths that maximize the statistical probability of observing the alignment given a substitution model [223].
+* **Likelihood Optimization**: Maximum Likelihood (ML) searches for the specific phylogenetic tree topology and branch lengths that maximize the statistical probability of observing the alignment given a substitution model.
 * **GTR+G+Invariable Evolutionary Substitution Model**:
   * **GTR (Generalized Time-Reversible)**: Allows symmetric, independent substitution rates between all nucleotide pairs.
   * **+G (Gamma Distribution)**: Models rate variation across different sequence sites.
   * **+Invariable (Invariable Sites)**: Accounts for a proportion of evolutionary frozen, non-changing alignment positions.
-* **Workflow Strategy**: Modern tools like `phangorn` build an initial Neighbor-Joining tree, then optimize likelihood parameter space to fit a refined GTR+G+Invariable Maximum Likelihood tree [223].
+* **Workflow Strategy**: Modern tools like `phangorn` build an initial Neighbor-Joining tree, then optimize likelihood parameter space to fit a refined GTR+G+Invariable Maximum Likelihood tree.
 
 ```
 Neighbor-Joining (NJ) Tree  -->  GTR+G+Invariable Substitution Fit  -->  Maximum Likelihood (ML) Refinement
@@ -163,10 +163,10 @@ Neighbor-Joining (NJ) Tree  -->  GTR+G+Invariable Substitution Fit  -->  Maximum
 ```
 
 ### 🧪 Distance Matrices & Beta-Diversity Ordination
-In microbial ecology workflows (such as `phyloseq` in R), phylogenetic trees enable phylogeny-aware dissimilarity calculations [224, 225, 227]:
+In microbial ecology workflows (such as `phyloseq` in R), phylogenetic trees enable phylogeny-aware dissimilarity calculations:
 
-* **UniFrac Distance**: Measures unique evolutionary branch lengths unshared between two microbial communities. **Unweighted UniFrac** evaluates community membership presence/absence, whereas **Weighted UniFrac** accounts for relative abundance levels [256, 265].
-* **DPCoA (Double Principal Coordinate Analysis)**: Incorporates phylogenetic distances into biplot ordination, projecting sample differences along evolutionary clades (e.g., distinguishing Bacteroidetes vs. Firmicutes shifts across host age bins) [262, 264, 265].
+* **UniFrac Distance**: Measures unique evolutionary branch lengths unshared between two microbial communities. **Unweighted UniFrac** evaluates community membership presence/absence, whereas **Weighted UniFrac** accounts for relative abundance levels.
+* **DPCoA (Double Principal Coordinate Analysis)**: Incorporates phylogenetic distances into biplot ordination, projecting sample differences along evolutionary clades (e.g., distinguishing Bacteroidetes vs. Firmicutes shifts across host age bins).
 
 ### 🔁 Bootstrapping for Branch Support Evaluation
 To assess the statistical reliability of inferred phylogenetic tree branches, researchers perform **bootstrapping**:
