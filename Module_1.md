@@ -65,14 +65,16 @@ The DECIPHER R package implements local sequence context profiling (`AlignSeqs`)
 
 **Instructions for Performing MSA using Clustal Omega (Clustal W)**
 
+*Note: If You are working on your own Sequence, then You have to Perform Step 1 and Step 2, If you are working as per demonstrated Video, You have to Download the txt file of sequences, mentioned below, and Directly start with Step 3*
+
 
 Step 1: Collect Sequences
 
-Obtain several related microbial DNA or protein sequences. (Download .txt file containing FASTA Sequences (same file is used for Demonstration)
+Obtain several related microbial DNA or protein sequences. [Click here to Download .txt file containing FASTA Sequences, same file is used for Demonstration](https://github.com/NinBioinformatics-Services/Culture-to-Code-and-Beyond-BLAST/blob/006ce941084f12274eb6c66a25a9f278e6d2688d/CCBB_MSA_Protein.txt)
 
 Step 2: Prepare the Sequences
 
-Ensure that the sequences are available in an appropriate format such as FASTA.
+Ensure that the sequences are available in an appropriate format such as FASTA. (If Working on your own Sequence, All the sequences are gathered and prepared in txt file provided earlier!)
 
 Step 3: Open the MSA Tool
 
