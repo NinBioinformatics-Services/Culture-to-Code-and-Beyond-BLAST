@@ -96,6 +96,66 @@ The software compares the sequences and generates an MSA.
 
 [![Tutorial](https://img.shields.io/badge/Video_link-will_be_out_soon!-%238A2BE2)](#)
 
+---
+
+## Supplementary Reading
+
+*Participant Must Read this Part Before Starting Watching Video on Microbial Taxanomy*
+
+From Culture-Based Identification to Sequence-Based Identification
+
+Traditional workflow:
+
+Microbial Sample
+
+       ↓
+       
+Culture
+
+       ↓
+       
+Colony Characteristics
+
+       ↓
+       
+Biochemical Tests
+
+       ↓
+       
+Identification
+
+
+
+Modern molecular workflow:
+
+Microbial Sample
+
+       ↓
+       
+DNA Extraction
+
+       ↓
+       
+Marker Gene Sequencing
+       
+       ↓
+       
+Sequence Analysis
+
+       ↓
+       
+Database Comparison
+
+       ↓
+       
+Taxonomic Identification
+
+
+Advantage
+
+**Molecular approaches can provide information even when traditional culture-based identification is difficult.**
+
+---
 ## 🧬 2. Marker Gene Analysis & Microbial Taxonomy
 
 Microbial taxonomy relies on marker gene profiling to classify bacteria, archaea, and fungi without needing unculturable organism isolation.
