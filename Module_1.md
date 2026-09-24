@@ -101,7 +101,7 @@ The software compares the sequences and generates an MSA.
 ## Supplementary Reading
 
 *Participant Must Read this Part Before Starting Watching Video on Microbial Taxanomy*
-
+```
 From Culture-Based Identification to Sequence-Based Identification
 
 Traditional workflow:
@@ -153,8 +153,8 @@ Taxonomic Identification
 
 Advantage
 
-**Molecular approaches can provide information even when traditional culture-based identification is difficult.**
-
+Molecular approaches can provide information even when traditional culture-based identification is difficult.
+```
 ---
 ## 🧬 2. Marker Gene Analysis & Microbial Taxonomy
 
@@ -184,7 +184,35 @@ The **16S ribosomal RNA (16S rRNA) gene** represents the ultimate gold standard 
     ^                                                                     ^
   Universal PCR Primer                                               Target Region
 ```
+---
+**Further Reading: Process of 16s r RNA**
+```
+16S rRNA-Based Bacterial Identification
 
+A simplified workflow is:
+
+Bacterial Sample
+      ↓
+DNA Extraction
+      ↓
+16S rRNA Amplification/Sequencing
+      ↓
+Sequence Quality Check
+      ↓
+Sequence Alignment
+      ↓
+Database Comparison
+      ↓
+Taxonomic Identification
+Main Concept
+
+The sequence is compared with reference sequences from known microorganisms.
+
+Greater sequence similarity can provide evidence for taxonomic relatedness.
+
+```
+
+---
 ### 🍄 ITS Region Profiling for Fungal Taxonomy
 For eukaryotic microorganisms such as fungi, 16S rRNA gene resolution is insufficient. Fungal taxonomic profiling relies on the **Internal Transcribed Spacer (ITS)** region:
 
