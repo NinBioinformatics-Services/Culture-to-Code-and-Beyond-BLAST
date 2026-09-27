@@ -307,10 +307,21 @@ Lower $E$-values (approaching 0) signal statistically significant homologous mat
 
 [Click Here for YouTube Link - https://www.youtube.com/playlist?list=PLdsPn6TM7UU0](https://www.youtube.com/playlist?list=PLdsPn6TM7UU0)
 
+---
+## Quiz 0
+[Click Here for Attemting Quiz!](https://forms.gle/NrnNY4WkmiqPMAeHA)
+
+This Quiz will not carry any marks, this quiz aims to only check the concept Clearance.
+Participant can use Internet and AI (if required), just have to declare that while submitting Quiz.
+Every Registered Participant is eligible for attempting Quiz. Participants are Provided with Unique ID on their registered WhatsApp Number, use that code for Unlocking Quiz, Do No share your code to anyone or use any other Participant's Code!
+
+---
+
 **For Registration in MOOC!**
 
 [Click Here](https://github.com/NinBioinformatics-Services/Culture-to-Code-and-Beyond-BLAST#culture-to-code-and-beyond-blast)
 ---
+
 
 
 ## 📚 References
