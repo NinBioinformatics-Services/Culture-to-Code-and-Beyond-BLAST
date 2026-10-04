@@ -6,6 +6,8 @@
 
 ---
 
+[Click Here to watch video on 'Basics of Sequence Alignment'!](https://youtu.be/vJrgTqoAupY?si=_8QCC0nYQQMTTwLv)
+
 ## 📌 1. Multiple Sequence Alignment (MSA) & Progressive Alignment Algorithms
 
 Sequence alignment represents the ultimate core foundation of computational biology. Aligning biological sequences reveals evolutionary conservation, structural motifs, and functional homology across diverse bacterial and fungal species. While pairwise alignment compares two sequences, **Multiple Sequence Alignment (MSA)** aligns three or more biological sequences simultaneously to identify conserved residue positions and evolutionary insertion-deletion (indel) events.
@@ -21,7 +23,7 @@ Multiple Sequence (MSA):   Seq A: ATGCGATAC
                                   *** * *** (Conserved Positions)
 ```
 
-[![Tutorial](https://img.shields.io/badge/Video_link-will_be_out_soon!-%238A2BE2)](#)
+[Click here to watch the video on 'Multiple Sequence Alignment'!](https://youtu.be/ZGPBxyF6z7k?si=UvXaFeGv4fkxYbKa)
 
 ### 🧠 Pairwise Foundation: Global vs. Local Alignment Algorithms
 Understanding MSA algorithms requires starting with pairwise alignment dynamic programming foundations:
@@ -38,6 +40,8 @@ Understanding MSA algorithms requires starting with pairwise alignment dynamic p
 
 ### 🚀 Progressive Alignment Approach
 Computing exact optimal N-dimensional dynamic programming alignments for $N$ sequences is NP-complete, requiring massive computational complexity. Modern MSA tools utilize **progressive alignment algorithms** :
+
+[click Here to watch Video on 'Multiple Sequence Algorithm'!](https://youtu.be/w-fDcP5XsYU?si=TqxMwWXav-7fx-oJ)
 
 1. **Calculate Pairwise Distance Matrix**: Calculate all pairwise alignment scores between sequence pairs using global alignment.
 2. **Construct Guide Tree**: Build a hierarchical guide tree (e.g., via Neighbor-Joining) based on pairwise dissimilarity matrices.
@@ -94,8 +98,7 @@ The software compares the sequences and generates an MSA.
 
 ---
 
-[![Tutorial](https://img.shields.io/badge/Video_link-will_be_out_soon!-%238A2BE2)](#)
-
+[Click Here to watch video on 'Multiple Sequence Alignment Demonstration!](https://youtu.be/z4fxYjHhY3I?si=suBvS8i_NXha_C2g)
 ---
 
 ## Supplementary Reading
@@ -160,6 +163,8 @@ Molecular approaches can provide information even when traditional culture-based
 
 Microbial taxonomy relies on marker gene profiling to classify bacteria, archaea, and fungi without needing unculturable organism isolation.
 
+[Click Here for video on 'Marker gene analysis and Microbial Taxonomy'!](https://youtu.be/Bkdw_dlNNJ0?si=Rj1JfbJX48Ls4S89)
+
 ```
                      Microbial Marker Genes
                                |
@@ -211,7 +216,7 @@ The sequence is compared with reference sequences from known microorganisms.
 Greater sequence similarity can provide evidence for taxonomic relatedness.
 
 ```
-
+[Click Here for video on '16s rRNA analysis in Bacteria'](https://youtu.be/y1hHI6y37WQ?si=zN9fhxuhsgdt5xPj)
 ---
 ### 🍄 ITS Region Profiling for Fungal Taxonomy
 For eukaryotic microorganisms such as fungi, 16S rRNA gene resolution is insufficient. Fungal taxonomic profiling relies on the **Internal Transcribed Spacer (ITS)** region:
@@ -235,6 +240,8 @@ Raw Reads (FASTQ) --> Quality Trimming --> DADA2 Error Model --> RSV Table --> C
 Taxonomic Assignment (RDP / SILVA) <-- DECIPHER Alignment <-- Phylogenetic Tree <--+
 ```
 
+[Click Here to watch Video on 'ITS region analysis in Fungi'](https://youtu.be/rvauHWK6ANg?si=-skhNj2llx9Kpro8)
+
 ### 🏷️ Taxonomic Classification Databases
 DADA2 utilizes Naive Bayesian Classifiers (`assignTaxonomy`) to match RSVs against reference database training sets.
 * **RDP (Ribosomal Database Project)**: Curated 16S rRNA bacterial reference training sets.
@@ -243,11 +250,12 @@ DADA2 utilizes Naive Bayesian Classifiers (`assignTaxonomy`) to match RSVs again
 
 ---
 
-[![Tutorial](https://img.shields.io/badge/Video_link-will_be_out_soon!-%238A2BE2)](#)
 
 ## 🌳 3. Molecular Phylogenetics & Tree-Building Methods
 
 Molecular phylogenetics reconstructs the evolutionary history and genealogical relationships among microbial species based on molecular sequence alignments.
+
+[Click here to watch video on 'Molecular Phylogenetics'](https://youtu.be/KSoA1o8cXNY?si=pAKkTIrqQGGTqQDj)
 
 ```
                      Phylogenetic Tree Reconstruction
@@ -336,12 +344,15 @@ Important Concept
 
 Maximum Likelihood considers the actual sequence data and an explicit model of sequence evolution.
 ```
+[Click here for video lecture of Phylogenetic Tree Types!](https://youtu.be/9nIiwDiAGj8?si=QOoYQ7a0jF8SJXmM)
 
 ### 🧪 Distance Matrices & Beta-Diversity Ordination
 In microbial ecology workflows (such as `phyloseq` in R), phylogenetic trees enable phylogeny-aware dissimilarity calculations:
 
 * **UniFrac Distance**: Measures unique evolutionary branch lengths unshared between two microbial communities. **Unweighted UniFrac** evaluates community membership presence/absence, whereas **Weighted UniFrac** accounts for relative abundance levels.
 * **DPCoA (Double Principal Coordinate Analysis)**: Incorporates phylogenetic distances into biplot ordination, projecting sample differences along evolutionary clades (e.g., distinguishing Bacteroidetes vs. Firmicutes shifts across host age bins).
+
+[Click Here for Distance Matrices video](https://youtu.be/XRemtUtp0go?si=beEpYVLJ-7E-SUPm)
 
 ### 🔁 Bootstrapping for Branch Support Evaluation
 To assess the statistical reliability of inferred phylogenetic tree branches, researchers perform **bootstrapping**:
@@ -380,9 +391,15 @@ Bootstrap support:
 
 This indicates that the branch was recovered in 95% of the bootstrap replicates.
 ```
+[Click here for know about 'Bootstrapping'!](https://youtu.be/fZwFw3ZbMv8?si=D9DbVfZ20jhAdq-N)
 
 ---
 
+## Demonstration of Phylogenetic Tree Building using MEGA 12 and Bootstrapping!
+
+[Click here for Demonstration!](https://youtu.be/dNTwruGKH3U?si=vTQNl_5Ujz86Ccdn)
+
+---
 ## 📚 References
 
 1. Altschul, S. F., Gish, W., Miller, W., Myers, E. W., & Lipman, D. J. (1990). Basic local alignment search tool. *Journal of Molecular Biology*, 215(3), 403-410. [PubMed PMID: 2231712].
