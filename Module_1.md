@@ -409,3 +409,9 @@ This indicates that the branch was recovered in 95% of the bootstrap replicates.
 5. Needleman, S. B., & Wunsch, C. D. (1970). A general method applicable to the search for similarities in the amino acid sequence of two proteins. *Journal of Molecular Biology*, 48(3), 443-453. [PubMed PMID: 5420325].
 6. OpenStax. (2016). *Microbiology*. Rice University. (Sections 10.2 Structure and Function of DNA, 10.3 Structure and Function of RNA, 12.2 Visualizing and Characterizing DNA, RNA, and Protein).
 7. Smith, T. F., & Waterman, M. S. (1981). Identification of common molecular subsequences. *Journal of Molecular Biology*, 147(1), 195-197. [PubMed PMID: 7265238].
+
+---
+## **Quiz for Module 1:**
+
+[Click Here for Quiz on Module 1: https://forms.gle/MMQXDECLBE5fiUWc7](https://forms.gle/MMQXDECLBE5fiUWc7)
+---
