@@ -65,6 +65,9 @@ While basic database navigation and simple alignment tools get you started, mode
 
 ## Registration
 
+***Registration is Ended, but under special cases, we can accommodate registrations, few slots are remaining!***
+
+*Register by 06/10/2026*
 
 **Click the link : [https://forms.gle/QPwobaEQ1A4KzDic9](https://forms.gle/QPwobaEQ1A4KzDic9) For Registration!**
 
