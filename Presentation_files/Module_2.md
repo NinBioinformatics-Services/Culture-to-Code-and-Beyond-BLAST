@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="ALPHAFOLD" src="https://github.com/user-attachments/assets/2c53f998-d8ec-4d57-96e4-9dafce3a270a" /><img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/370d4c81-47e5-468e-9747-4175d035d027" />
+<img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/370d4c81-47e5-468e-9747-4175d035d027" />
 
 
 # Module 2: Structural Bioinformatics & Protein Modeling
@@ -1275,118 +1275,7 @@ Function
 
 ---
 
-# PART N: COMPLETE PRACTICAL WORKFLOW
-
-## Slide 47: Practical Workflow — Protein Sequence to Structure
-
-### Overall Workflow
-
-```text
-Protein Sequence
-       ↓
-Sequence Analysis
-       ↓
-Domain / Motif Identification
-       ↓
-Known Structure Search
-       ↓
-     ┌───────────────┐
-     ↓               ↓
-Known Structure   No Suitable Structure
-     ↓               ↓
-Visualization    Structure Prediction
-     ↓               ↓
-PyMOL/Chimera    SWISS-MODEL / AlphaFold
-     ↓               ↓
-Structural Analysis
-       ↓
-Active Site / Ligand Analysis
-       ↓
-Functional Interpretation
-```
-
-### Main Learning Goal
-
-Move from a simple protein sequence toward a biologically meaningful structural interpretation.
-
----
-
-## Slide 48: Complete Demonstration — SWISS-MODEL and AlphaFold
-
-### Part A: SWISS-MODEL
-
-1. Select a protein sequence.
-2. Submit the sequence to SWISS-MODEL.
-3. Examine available templates.
-4. Compare template quality and sequence similarity.
-5. Select an appropriate template.
-6. Generate the homology model.
-7. Examine model quality.
-8. Visualize the model.
-9. Inspect important residues or regions.
-
-### Part B: AlphaFold
-
-1. Obtain the same protein sequence.
-2. Search the AlphaFold Protein Structure Database.
-3. Open the predicted structure.
-4. Examine the 3D model.
-5. Inspect pLDDT confidence.
-6. Identify high- and low-confidence regions.
-7. Compare the predicted structure with the SWISS-MODEL model.
-8. Examine possible functional regions.
-
-### Discussion
-
-Ask:
-
-* Are the overall folds similar?
-* Which regions differ?
-* Which regions have high confidence?
-* Are functional residues located in reliable regions?
-* What additional evidence would be needed?
-
----
-
-# PART O: IMPORTANT CONCEPTUAL POINTS
-
-## Slide 49: Key Takeaways
-
-### Protein Structure
-
-Proteins have primary, secondary, tertiary, and sometimes quaternary structure.
-
-### Domains and Motifs
-
-Domains and motifs provide important clues about protein organization and function.
-
-### Visualization
-
-PyMOL and UCSF Chimera allow protein structures to be explored in three dimensions.
-
-### Homology Modeling
-
-SWISS-MODEL can build a protein model using suitable known structures as templates.
-
-### AlphaFold
-
-AlphaFold provides AI-based protein structure predictions from amino acid sequence information.
-
-### Active Sites
-
-The active site is the region involved in substrate binding and enzyme activity.
-
-### Catalytic Residues
-
-Specific residues within or around the active site can directly participate in catalysis.
-
-### Final Principle
-
-**Sequence → Structure → Active Site → Function**
-
----
-
-## Slide 50: Reflection Questions and End of Module
+## Reflection Questions and End of Module
 
 ### Reflection Questions
 
@@ -1400,28 +1289,6 @@ Specific residues within or around the active site can directly participate in c
 8. What does pLDDT tell about an AlphaFold prediction?
 9. What is the difference between an active site and a catalytic residue?
 10. Why should computational protein models be carefully evaluated?
-
-### Final Workflow
-
-```text
-PROTEIN SEQUENCE
-       ↓
-STRUCTURAL ORGANIZATION
-       ↓
-DOMAINS + MOTIFS
-       ↓
-STRUCTURE VISUALIZATION
-       ↓
-HOMOLOGY MODELING / ALPHAFOLD
-       ↓
-MODEL CONFIDENCE
-       ↓
-ACTIVE SITE
-       ↓
-CATALYTIC RESIDUES
-       ↓
-FUNCTIONAL INTERPRETATION
-```
 
 ### End of Module 2
 
