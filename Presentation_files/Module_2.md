@@ -674,7 +674,7 @@ A ligand-binding region can be displayed and individual amino acids around the l
 
 # PART G: PRACTICAL STRUCTURE VISUALIZATION
 
-## Slide 26: Practical Demonstration — Viewing a Protein Structure
+## Practical Demonstration — Viewing a Protein Structure
 
 ### Objective
 
