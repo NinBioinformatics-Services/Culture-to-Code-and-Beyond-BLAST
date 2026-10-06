@@ -8,6 +8,10 @@
 
 ## 📌 Section 1: Protein Structural Levels, Domains, and File Architectures
 
+[Watch Basics of Protein (Click Here!)](https://youtu.be/dpvOg887KLE)
+---
+
+
 Proteins execute catalysis, structural integrity, signal transduction, and molecular transport across all cellular life. Understanding three-dimensional macromolecular architectures requires analyzing structural hierarchies alongside standardized computational file specifications.
 
 ```
@@ -22,8 +26,14 @@ Protein architecture organizes into four distinct structural tiers:
 * **Tertiary Structure**: Three-dimensional spatial conformation of a single polypeptide chain driven by hydrophobic collapse, disulfide bridges (`SSBOND`), salt bridges, and van der Waals forces.
 * **Quaternary Structure**: Spatial arrangement and non-covalent or covalent interaction of multiple polypeptide subunits forming functional multimeric complexes.
 
+[Watch Levels of Protein Structure(Click Here!)](https://youtu.be/iH0i-dk6zaY)
+---
+
 ### 🧬 Domains, Motifs, and CATH Structural Classification
 Protein domains represent modular, independently folding structural units that recur across distinct evolutionary lineages. Motifs (or supersecondary structures) consist of conserved combinations of secondary structure elements, such as helix-turn-helix motifs in transcription factors or Rossmann folds in nucleotide-binding enzymes.
+
+[Click Here to Watch Domain and Motifs](https://youtu.be/JoL_JwpeyXo)
+---
 
 The **CATH Protein Structure Classification Database** classifies experimental biological macromolecular structures from the Protein Data Bank into a rigorous four-tier hierarchy:
 1. **Class (C)**: Determined by overall secondary structure composition (e.g., Mainly Alpha, Mainly Beta, Alpha-Beta, or Few Secondary Structures).
@@ -41,6 +51,7 @@ CATH Hierarchy:
                 └── [H] Homologous Superfamily  (Evolutionary Relatives)
                       └── [FunFam] Functional Families  (Conserved Catalytic Residues)
 ```
+![Demonstration](https://img.shields.io/badge/Demonstration-Coming%20Soon-success?style=for-the-badge)
 
 ### 💾 The Protein Data Bank (PDB) Flat-File Architecture
 The **Protein Data Bank (PDB)** archives atomic coordinates determined via X-ray crystallography, NMR spectroscopy, and cryo-electron microscopy. The legacy PDB format enforces an 80-column fixed-width ASCII record format:
@@ -69,8 +80,14 @@ Key PDB record types include:
 * `CRYST1`: Crystallographic unit cell dimensions ($a, b, c, lpha, eta, \gamma$) and space group symmetry.
 
 ---
+![Demonstration](https://img.shields.io/badge/Demonstration-Coming%20Soon-success?style=for-the-badge)
 
 ## 📌 Section 2: 3D Structure Visualization and Command-Line Manipulation
+
+[Click Here for Secondary Structure Prediction](https://youtu.be/mQZlHxSscTQ)
+---
+
+![Declaration](https://img.shields.io/badge/Declaration-Only%20for%20Reading-orange?style=plastic)
 
 Molecular visualization transforms abstract atomic coordinates into interpretable structural insights. Interactive visualization tools facilitate active site analysis, surface electrostatic potential mapping, and structural superposition.
 
@@ -94,6 +111,9 @@ distance H_bond, /glutamate_racemase//A/73/SG, /glutamate_racemase//A/184/SG
 set dash_color, yellow                         # Color measurement dashes
 ```
 
+[Protein Structure Visualization(Link for Tutorial!)](https://youtu.be/EuncHmt3Cr8)
+---
+
 Key visualization operations and algorithms in PyMOL include:
 * **Secondary Structure Assignment (`dss`)**: Reassigns helices and strands based on backbone geometry and hydrogen-bonding networks.
 * **Solvent Accessible Surface Area (`get_sasa_relative` / `get_area`)**: Computes solvent-exposed versus buried residue surface area using rolling sphere probes.
@@ -103,6 +123,9 @@ Key visualization operations and algorithms in PyMOL include:
 In experimental biochemistry, structural composition and purity are verified prior to crystallization using Sodium Dodecyl Sulfate Polyacrylamide Gel Electrophoresis (SDS-PAGE). Denaturing detergent SDS unfolds proteins and coats polypeptides with uniform negative charge, enabling size-based migration separation within polyacrylamide matrices visualized via Coomassie stain.
 
 ---
+[Secondary Structure Prediction(click to Watch!)](https://youtu.be/mQZlHxSscTQ)
+---
+
 
 ## 📌 Section 3: Homology Modeling and AI-Driven Structure Prediction
 
@@ -116,12 +139,17 @@ Target Sequence  -->  Template Search  -->  Target-Template  -->  Backbone & Loo
 ### 🧬 Homology (Comparative) Modeling Protocols
 Homology modeling rests on the evolutionary principle that protein structural tertiary folds remain far more conserved than primary sequences [85]. When sequence identity exceeds 30%, homologous proteins adopt highly similar backbone conformations.
 
+[Watch Homology Modeling](https://youtu.be/B8XAU7mI6TY)
+---
+
 The automated homology modeling pipeline (e.g., SWISS-MODEL) follows a strict workflow:
 1. **Template Identification**: Search the PDB for known structural homologs using BLAST or profile-HMM algorithms (HHblits).
 2. **Target-Template Alignment**: Generate dynamic programming alignments to align target sequence residues with template atomic coordinates.
 3. **Backbone Generation & Loop Modeling**: Transfer conserved core backbone coordinates ($N, C_lpha, C, O$) from the template. Reconstruct insertion/deletion loops using fragment libraries or energy minimization algorithms.
 4. **Side-Chain Packing & Refinement**: Model rotamer conformations for divergent side chains, optimizing steric contacts and hydrogen-bonding networks.
 5. **Quality Assessment**: Evaluate stereochemical accuracy via Ramachandran outlier detection, packing density, and QMEAN scoring parameters.
+
+![Tutorial](https://img.shields.io/badge/Tutorial-Coming%20soon!-yellow?style=social)
 
 ### 🤖 Deep Learning Structural Prediction: AlphaFold
 AlphaFold transforms structural biology by predicting atomic coordinates directly from primary amino acid sequences with experimental accuracy.
@@ -141,9 +169,13 @@ Key technological innovations within AlphaFold include:
   * $pLDDT < 50$: Flexible, disordered, or unstructured regions.
 * **Predicted Aligned Error (PAE)**: Quantifies inter-domain alignment position uncertainties, facilitating domain boundary definition.
 
+![Tutorial](https://img.shields.io/badge/Tutorial-Coming%20soon!-yellow?style=social)
+
 ---
 
 ## 📌 Section 4: Structural Enzymology and Active Site Mechanics
+
+![Tutorial](https://img.shields.io/badge/Tutorial-Coming%20soon!-yellow?style=social)
 
 Enzymes function as biological catalysts, accelerating chemical reaction rates by lowering activation energy barriers ($\Delta G^\ddagger$) without altering overall reaction equilibria.
 
