@@ -215,6 +215,10 @@ Similarly, structural enzymology revealed that the 50S large ribosomal subunit f
 
 ---
 
+## Quiz
+[Click Here for Quiz (https://forms.gle/15GpmzdMR3JN7uKH8)](https://forms.gle/15GpmzdMR3JN7uKH8)
+---
+
 ## 📚 References
 
 1. OpenStax. 10.3 Structure and Function of RNA. *Microbiology*, OpenStax, 2016.
