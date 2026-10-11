@@ -92,6 +92,11 @@ If You feel any Difficulty while registration/Have any Query, Just mail/WhatsApp
 **Wish to See You in a MOOC!**
 
 ---
+
+[Doubt Raising Form: https://forms.gle/dfsw98VFtgK5Y386A](https://forms.gle/dfsw98VFtgK5Y386A)
+---
+
+---
 ## License
 
 This course content is licensed under a [![CC BY 4.0][cc-by-shield]][cc-by].
