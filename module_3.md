@@ -309,14 +309,18 @@ Aligning RNA-Seq reads back to reference genomes yields raw gene count matrices 
 #### Reads Per Kilobase Million (RPKM)
 RPKM normalizes raw counts ($C_i$) by gene length in kilobases ($L_i / 10^3$) and total sequencing depth in millions of reads ($N / 10^6$):
 
-$$	ext{RPKM}_i = rac{C_i}{\left( rac{L_i}{10^3} ight) \cdot \left( rac{N}{10^6} ight)} = rac{C_i \cdot 10^9}{L_i \cdot N}$$
+$$	ext{RPKM}_i = rac{C_i}{\left( rac{L_i}{10^3} 
+ight) \cdot \left( rac{N}{10^6} 
+ight)} = rac{C_i \cdot 10^9}{L_i \cdot N}$$
 
 Because total RPKM sums vary across samples, RPKM values fail proportional invariance checks, rendering RPKM metrics invalid for cross-sample comparisons.
 
 #### Transcripts Per Million (TPM)
 TPM corrects gene length first, then normalizes by modified sample depth:
 
-$$	ext{TPM}_i = rac{\left( rac{C_i}{L_i} ight)}{\sum_j \left( rac{C_j}{L_j} ight)} \cdot 10^6$$
+$$	ext{TPM}_i = rac{\left( rac{C_i}{L_i} 
+ight)}{\sum_j \left( rac{C_j}{L_j} 
+ight)} \cdot 10^6$$
 
 Summing TPM values across all genes in every sample yields a constant $10^6$. TPM represents relative transcript abundance accurately within a single sample.
 
@@ -360,8 +364,10 @@ Binning tools like `MetaBAT2` combine tetranucleotide frequencies and co-abundan
 
 Evaluating Metagenome-Assembled Genome quality requires assessing genome completeness and contamination without relying on matching reference genomes. `CheckM` estimates these metrics by scanning MAGs for sets of single-copy marker genes universally conserved within specific phylogenetic lineages:
 
-$$	ext{Completeness (\%)} = \left( rac{	ext{Detected Marker Genes}}{	ext{Total Lineage Marker Genes}} ight) \cdot 100$$
+$$	ext{Completeness (\%)} = \left( rac{	ext{Detected Marker Genes}}{	ext{Total Lineage Marker Genes}} 
+ight) \cdot 100$$
 
-$$	ext{Contamination (\%)} = \left( rac{	ext{Duplicated Marker Genes}}{	ext{Total Lineage Marker Genes}} ight) \cdot 100$$
+$$	ext{Contamination (\%)} = \left( rac{	ext{Duplicated Marker Genes}}{	ext{Total Lineage Marker Genes}} 
+ight) \cdot 100$$
 
 High-quality draft MAGs require $>90\%$ completeness and $<5\%$ contamination profiles, yielding reference-grade draft genomes for unculturable biological dark matter.
