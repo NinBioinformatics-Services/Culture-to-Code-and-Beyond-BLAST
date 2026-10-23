@@ -101,7 +101,7 @@ A combined approach is often called hybrid sequencing or hybrid assembly when th
 
 ## Part C: From Raw Reads to Usable Data
 
-### Slide 12: What Is a FASTQ File?
+### What Is a FASTQ File?
 FASTQ is a common file format used to store sequencing reads together with their base-quality scores.
 
 A typical FASTQ record contains four lines:
@@ -112,7 +112,7 @@ A typical FASTQ record contains four lines:
 
 FASTQ files are commonly used as the starting point for read quality control and preprocessing.
 
-### Slide 13: What Are Quality Scores?
+### What Are Quality Scores?
 Sequencing quality scores estimate the confidence associated with individual base calls. They are commonly represented using Phred quality scores.
 
 A higher Phred score indicates a lower estimated probability of a base-calling error.
@@ -121,7 +121,7 @@ For example, a Phred score of Q30 corresponds to an estimated error probability 
 
 Quality scores are important because low-quality bases can affect mapping, assembly, and variant detection.
 
-### Slide 14: What Is Quality Control in Sequencing?
+### What Is Quality Control in Sequencing?
 Quality control (QC) is the process of checking whether sequencing data meet the requirements for downstream analysis.
 
 Common QC checks include:
@@ -134,14 +134,14 @@ Common QC checks include:
 
 QC results help determine whether data are suitable for further processing.
 
-### Slide 15: Adapter Trimming and Read Filtering
+### Adapter Trimming and Read Filtering
 Adapters are short artificial DNA sequences introduced during library preparation. They may appear in sequencing reads when the original DNA fragment is shorter than the sequenced region or when adapter sequences are otherwise retained.
 
 Adapter trimming removes these unwanted sequences. Quality filtering may remove reads or bases that do not meet specified criteria.
 
 **Important:** Trimming parameters should be selected carefully. Excessive trimming can remove useful biological sequence information.
 
-### Slide 16: Practical Demonstration — Initial Read Quality Control
+### Practical Demonstration — Initial Read Quality Control
 **Objective:** Inspect raw sequencing data before further analysis.
 
 **General workflow:**
@@ -156,26 +156,26 @@ Adapter trimming removes these unwanted sequences. Quality filtering may remove 
 
 ## Part D: Genome Assembly and Reference Mapping
 
-### Slide 17: What Is Genome Assembly?
+### What Is Genome Assembly?
 Genome assembly is the computational process of reconstructing longer genomic sequences from shorter sequencing reads.
 
 The reads are fragments of the original DNA. Assembly tools identify overlaps or other sequence relationships and combine reads into longer sequences called contigs.
 
 Contigs may be connected into scaffolds when additional information supports their relative order and orientation.
 
-### Slide 18: What Is a Contig?
+### What Is a Contig?
 A contig is a continuous DNA sequence assembled from overlapping sequencing reads without gaps within that sequence.
 
 For example, if several reads overlap across a region of a bacterial chromosome, an assembly program may combine them into one longer contig.
 
 A draft genome may contain several contigs rather than one complete chromosome.
 
-### Slide 19: What Is a Scaffold?
+### What Is a Scaffold?
 A scaffold is a larger assembly structure that connects contigs in an estimated order and orientation. Gaps may remain between the contigs because the intervening sequence is not fully reconstructed.
 
 Scaffolds provide additional information about genome organization, but a scaffold is not necessarily a continuous, fully resolved DNA sequence.
 
-### Slide 20: What Is de novo Assembly?
+### What Is de novo Assembly?
 De novo assembly reconstructs genomic sequences without relying on a pre-existing reference genome to guide the assembly.
 
 The assembler uses information in the sequencing reads to infer how the fragments fit together.
@@ -187,14 +187,14 @@ This approach is useful when:
 
 **Example:** Sequencing an environmental bacterium with no closely related reference genome may require de novo assembly.
 
-### Slide 21: What Is Reference Mapping?
+### What Is Reference Mapping?
 Reference mapping aligns sequencing reads against an existing reference genome or sequence.
 
 The reference provides a coordinate system for determining where reads originate. Mapped reads can then be used to study sequence variation, gene coverage, or other genomic features.
 
 **Example:** Reads from a newly isolated bacterial strain can be mapped against a related reference genome to investigate differences between the strains.
 
-### Slide 22: de novo Assembly vs. Reference Mapping
+### de novo Assembly vs. Reference Mapping
 
 **de novo assembly**
 - Reconstructs sequences from the reads.
@@ -210,7 +210,7 @@ The reference provides a coordinate system for determining where reads originate
 
 The method should be chosen according to the study objective and the availability of an appropriate reference genome.
 
-### Slide 23: What Is Genome Coverage?
+### What Is Genome Coverage?
 Genome coverage describes how much sequencing data are available relative to the size of the genome.
 
 A simplified measure of average sequencing depth is:
@@ -221,7 +221,7 @@ For example, if 200 million bases of usable sequence data are generated for a ge
 
 Actual usable coverage can be lower because of duplicate reads, uneven coverage, filtering, or reads that do not map to the target genome.
 
-### Slide 24: What Is Assembly Quality?
+### What Is Assembly Quality?
 Assembly quality describes how well an assembly represents the original genome.
 
 Common assessment measures include:
@@ -234,7 +234,7 @@ Common assessment measures include:
 
 No single statistic proves that an assembly is correct. Several measures and biological checks should be considered together.
 
-### Slide 25: What Is N50?
+### What Is N50?
 N50 is a commonly reported assembly statistic describing contig or scaffold lengths.
 
 To calculate contig N50, contigs are sorted from longest to shortest and their lengths are added until the cumulative length reaches at least 50% of the total assembly length. The length of the contig at that point is the N50.
@@ -243,7 +243,7 @@ A higher N50 often indicates a more contiguous assembly, but it does not automat
 
 ## Part E: Genome Annotation and ORFs
 
-### Slide 26: What Is Genome Annotation?
+### What Is Genome Annotation?
 Genome annotation identifies and describes biological features in a genome sequence.
 
 Structural annotation identifies features such as genes, coding sequences, RNA genes, and other genomic elements.
@@ -252,14 +252,14 @@ Functional annotation assigns likely biological roles to identified genes or pro
 
 Annotation is a key step in converting an assembled sequence into biologically interpretable information.
 
-### Slide 27: What Is an Open Reading Frame (ORF)?
+### What Is an Open Reading Frame (ORF)?
 An open reading frame (ORF) is a stretch of nucleotide sequence that could potentially encode a protein, based on its reading frame and the presence of start and stop codons.
 
 Protein-coding sequences are interpreted in groups of three nucleotides called codons.
 
 An ORF is a candidate for coding potential, not proof that a functional protein is produced. Additional evidence is needed to identify genuine genes confidently.
 
-### Slide 28: Why Are ORFs Important?
+### Why Are ORFs Important?
 ORF identification helps researchers find possible protein-coding regions in newly sequenced genomes.
 
 It is useful for:
@@ -271,7 +271,7 @@ It is useful for:
 
 **Example:** An ORF predicted in a bacterial genome may encode a protein involved in nutrient metabolism, but its function requires further evidence.
 
-### Slide 29: How Are ORFs Identified?
+### How Are ORFs Identified?
 A basic ORF-searching approach examines the possible reading frames of a DNA sequence and looks for stretches that begin with a recognised start codon and end at an in-frame stop codon.
 
 In DNA, commonly recognised start and stop codons include:
@@ -280,7 +280,7 @@ In DNA, commonly recognised start and stop codons include:
 
 Gene prediction tools use additional information, such as coding patterns and organism-specific features. In microbial genomes, automated annotation pipelines are often used because manual identification is not practical at scale.
 
-### Slide 30: What Is Functional Annotation?
+### What Is Functional Annotation?
 Functional annotation attempts to assign a biological role to a predicted gene or protein.
 
 Evidence may include:
@@ -292,45 +292,30 @@ Evidence may include:
 
 Predicted functions should be labelled according to the strength of evidence. A weak similarity does not justify a highly specific functional claim.
 
-### Slide 31: Practical Demonstration — From Reads to Annotated Genome
-**Objective:** Understand the stages involved in processing microbial sequencing data.
-
-**General workflow:**
-1. Obtain raw FASTQ reads.
-2. Check read quality with FastQC.
-3. Summarize reports with MultiQC when appropriate.
-4. Trim adapters or filter reads if needed.
-5. Assemble the genome using an appropriate assembler.
-6. Evaluate the assembly using assembly statistics and suitable quality tools.
-7. Annotate the assembled genome using a pipeline such as Prokka or Bakta, where appropriate.
-8. Examine predicted genes, coding sequences, RNA genes, and functional annotations.
-
-**Expected outputs:** QC reports, cleaned reads, contigs or scaffolds, assembly statistics, annotated genome files, and gene or protein tables.
-
 ## Part F: Introduction to Transcriptomics
 
-### Slide 32: What Is Transcriptomics?
+### What Is Transcriptomics?
 Transcriptomics is the study of RNA molecules produced by cells or organisms under particular conditions.
 
 The transcriptome can change with environmental conditions, growth stages, nutrient availability, stress, or infection.
 
 Unlike a genome, which is comparatively stable within a strain, the transcriptome can change substantially depending on when and how the sample is collected.
 
-### Slide 33: What Is Gene Expression?
+### What Is Gene Expression?
 Gene expression is the process by which information in a gene is used to produce a functional product, such as RNA or protein.
 
 For protein-coding genes, expression commonly involves transcription of DNA into RNA followed by translation of messenger RNA into protein.
 
 Measuring RNA abundance provides information about transcriptional activity, but RNA abundance does not always directly predict protein abundance or activity.
 
-### Slide 34: What Is RNA-Seq?
+### What Is RNA-Seq?
 RNA sequencing (RNA-Seq) is a high-throughput method used to study RNA molecules by sequencing cDNA or, in some workflows, RNA directly.
 
 In a common RNA-Seq workflow, RNA is extracted, a sequencing library is prepared, and sequencing reads are analysed to estimate transcript abundance or compare gene expression between conditions.
 
 RNA-Seq can identify expressed genes, compare expression levels, and reveal transcriptional responses to different treatments.
 
-### Slide 35: Why Is RNA-Seq Useful in Microbiology?
+### Why Is RNA-Seq Useful in Microbiology?
 RNA-Seq can help researchers investigate how microorganisms respond to changes in their environment.
 
 Examples include:
@@ -342,7 +327,7 @@ Examples include:
 
 **Example:** Comparing bacterial cultures grown with and without an antibiotic can reveal genes whose RNA abundance changes during exposure. Such changes can suggest biological responses, but do not alone prove that a gene causes resistance.
 
-### Slide 36: Basic RNA-Seq Workflow
+### Basic RNA-Seq Workflow
 A typical RNA-Seq workflow includes:
 
 1. Design biological conditions and replicates.
@@ -360,28 +345,28 @@ A typical RNA-Seq workflow includes:
 
 The exact workflow depends on the organism, library preparation method, reference availability, and research question.
 
-### Slide 37: What Is Differential Gene Expression?
+### What Is Differential Gene Expression?
 Differential gene expression analysis identifies genes whose measured RNA abundance differs between experimental conditions.
 
 For example, researchers may compare gene expression in bacteria exposed to a stress condition with expression in an untreated control group.
 
 Statistical analysis helps distinguish expression differences supported by the data from changes that could plausibly arise from biological or technical variation.
 
-### Slide 38: What Is a Control Group?
+### What Is a Control Group?
 A control group provides a baseline for comparison.
 
 In an RNA-Seq experiment, the control may represent an untreated condition, a standard growth condition, or another scientifically appropriate reference state.
 
 Experimental and control samples should be collected and processed consistently. Biological replicates are important for estimating natural variation between samples.
 
-### Slide 39: What Are Biological Replicates?
+### What Are Biological Replicates?
 Biological replicates are independent biological samples representing the same experimental condition.
 
 For example, independently grown bacterial cultures treated under the same conditions can serve as biological replicates.
 
 Replicates help estimate biological variation and improve the reliability of statistical comparisons. Repeated sequencing of the same library is not equivalent to collecting independent biological replicates.
 
-### Slide 40: What Is a Count Matrix?
+### What Is a Count Matrix?
 A count matrix is a table containing the number of sequencing reads assigned to each gene in each sample.
 
 Rows usually represent genes, and columns represent samples.
@@ -396,7 +381,7 @@ A simplified example:
 
 These are illustrative counts. The table alone is not enough to establish statistical significance because sample variation, sequencing depth, and the analysis model must also be considered.
 
-### Slide 41: What Are Fold Change and Log2 Fold Change?
+### What Are Fold Change and Log2 Fold Change?
 Fold change describes the ratio of expression between two conditions.
 
 For example, if a gene has an estimated expression level of 200 in the treated condition and 100 in the control condition, the fold change is 2.
@@ -408,7 +393,7 @@ Log2 fold change is the base-2 logarithm of that ratio:
 
 In actual RNA-Seq analysis, fold changes are generally calculated from normalized expression estimates using a statistical model, rather than by comparing raw counts alone.
 
-### Slide 42: What Is a p-Value and Adjusted p-Value?
+### What Is a p-Value and Adjusted p-Value?
 A p-value measures how compatible the observed data are with a specified statistical null hypothesis under the assumptions of the test.
 
 RNA-Seq studies often test thousands of genes simultaneously. Multiple-testing correction is therefore needed to reduce the expected proportion of false discoveries among declared significant results.
@@ -416,21 +401,6 @@ RNA-Seq studies often test thousands of genes simultaneously. Multiple-testing c
 An adjusted p-value or false discovery rate (FDR) measure helps account for multiple comparisons.
 
 A small adjusted p-value supports a statistical difference under the analysis model, but does not by itself establish biological importance or causation.
-
-### Slide 43: Practical Demonstration — RNA-Seq Differential Expression
-**Objective:** Understand how expression changes are identified between two conditions.
-
-**General workflow:**
-1. Obtain RNA-Seq FASTQ files from control and treated samples.
-2. Perform read quality control.
-3. Map reads to a suitable reference or use an appropriate alternative workflow.
-4. Generate a gene-level count matrix.
-5. Use a differential expression package such as DESeq2 for count-based analysis.
-6. Specify the experimental design and compare the conditions.
-7. Examine log2 fold changes, adjusted p-values, and expression patterns.
-8. Identify candidate genes for further biological interpretation.
-
-**Interpretation:** A gene with a positive log2 fold change has higher estimated expression in the numerator condition of the defined comparison. A negative value indicates lower estimated expression. The comparison direction must always be checked.
 
 ## Part G: Metagenomics and Microbial Sampling
 
