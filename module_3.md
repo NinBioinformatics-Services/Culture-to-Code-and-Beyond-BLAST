@@ -371,3 +371,6 @@ $$	ext{Contamination (\%)} = \left( rac{	ext{Duplicated Marker Genes}}{	ext{Tot
 ight) \cdot 100$$
 
 High-quality draft MAGs require $>90\%$ completeness and $<5\%$ contamination profiles, yielding reference-grade draft genomes for unculturable biological dark matter.
+
+
+[Module 3 Quiz Link (Click Here!): https://forms.gle/2rdm5w7W4Jzmznii8](https://forms.gle/2rdm5w7W4Jzmznii8)
